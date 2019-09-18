@@ -16,11 +16,10 @@ namespace Sweepstakes
         {
             // do stuff;
         }
-        public Contestant PickWinner()
+        public Contestant PickWinner(string contestant)
         {
             // do stuff;
-            Contestant test = new Contestant();
-            return test;
+            return contestant.firstName + " " + contestant.lastName;
         }
         public void PrintContestantInfo(Contestant contestant)
         {

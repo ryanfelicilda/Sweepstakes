@@ -20,5 +20,12 @@ namespace Sweepstakes
             int input = int.Parse(Console.ReadLine());
             return input;
         }
+        public void AssignContestantObjects(Contestant contestant)
+        {
+            contestant.firstName = UserInput("Please enter your first name.");
+            contestant.lastName = UserInput("Please enter your last name.");
+            contestant.emailAdd = UserInput("Please enter your email address.");
+            contestant.regNumber = UserInput("Please enter your registration number.");
+        }
     }
 }
