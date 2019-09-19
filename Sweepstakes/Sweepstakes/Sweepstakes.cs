@@ -8,14 +8,17 @@ namespace Sweepstakes
 {
     public class Sweepstakes
     {
-        //Dictionary<int, Contestant> contDict = new Dictionary<int, Contestant>();
+        Dictionary<int, Contestant> contestants;
+        public int registrationNumber;
+
         public Sweepstakes(string name)
         {
             // do stuff;
         }
         public void RegisterContestant(Contestant contestant)
         {
-            // do stuff;
+            registrationNumber = contestants.Count() + 1;
+            contestants.Add(registrationNumber, contestant);
         }
         public string PickWinner(Contestant contestant)
         {
