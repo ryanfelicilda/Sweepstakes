@@ -16,9 +16,8 @@ namespace Sweepstakes
         {
             // do stuff;
         }
-        public Contestant PickWinner(string contestant)
+        public string PickWinner(Contestant contestant)
         {
-            // do stuff;
             return contestant.firstName + " " + contestant.lastName;
         }
         public void PrintContestantInfo(Contestant contestant)

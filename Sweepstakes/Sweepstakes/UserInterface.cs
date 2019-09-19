@@ -25,7 +25,12 @@ namespace Sweepstakes
             contestant.firstName = UserInput("Please enter your first name.");
             contestant.lastName = UserInput("Please enter your last name.");
             contestant.emailAdd = UserInput("Please enter your email address.");
-            contestant.regNumber = UserInput("Please enter your registration number.");
+        }
+        public int GenerateRegistrationNumber()
+        {
+            Random random = new Random();
+            int number = random.Next(100000, 500000);
+            return number;
         }
     }
 }
