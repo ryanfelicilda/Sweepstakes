@@ -8,6 +8,7 @@ namespace Sweepstakes
 {
     public class Sweepstakes
     {
+        //Dictionary<int, Contestant> contDict = new Dictionary<int, Contestant>();
         public Sweepstakes(string name)
         {
             // do stuff;
