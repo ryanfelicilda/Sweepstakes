@@ -10,10 +10,11 @@ namespace Sweepstakes
     {
         private readonly Dictionary<int, Contestant> contestants;
         public int registrationNumber;
-
+        public string nameOfSweepstake;
         public Sweepstakes(string name)
         {
-            contestants = Dictionary<int, Contestant>();
+            nameOfSweepstake = name;
+            contestants = new Dictionary<int, Contestant>();
         }
         public void RegisterContestant(Contestant contestant)
         {
@@ -24,9 +25,9 @@ namespace Sweepstakes
         {
             return contestant.firstName + " " + contestant.lastName;
         }
-        public void PrintContestantInfo(Contestant contestant)
+        public string PrintContestantInfo(Contestant contestant)
         {
-            return contestant.firstName + " " + contestant.lastName;
+            return contestant.firstName + " " + contestant.lastName + ", " + contestant.emailAdd;
         }
     }
 }
