@@ -8,13 +8,12 @@ namespace Sweepstakes
 {
     public class Sweepstakes
     {
-        private readonly Dictionary<int, Contestant> contestants;
+        private readonly Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
         public int registrationNumber;
         public string nameOfSweepstake;
         public Sweepstakes(string name)
         {
             nameOfSweepstake = name;
-            contestants = new Dictionary<int, Contestant>();
         }
         public void RegisterContestant(Contestant contestant)
         {
@@ -25,9 +24,9 @@ namespace Sweepstakes
         {
             return contestant.firstName + " " + contestant.lastName;
         }
-        public string PrintContestantInfo(Contestant contestant)
+        public void PrintContestantInfo(Contestant contestant)
         {
-            return contestant.firstName + " " + contestant.lastName + ", " + contestant.emailAdd;
+            Console.WriteLine(contestant.firstName + " " + contestant.lastName + ", " + contestant.emailAdd);
         }
     }
 }
