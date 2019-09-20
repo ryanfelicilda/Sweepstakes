@@ -11,7 +11,16 @@ namespace Sweepstakes
         public ISweepstakesManager SweepstakeManager;
         public void CreateSweepstake()
         {
-
+            // do stuff;
         }
+        public void RunSweepstake()
+        {
+            // do stuff;
+        }
+        public void CreateContestants()
+        {
+            // do stuff;
+        }
+
     }
 }

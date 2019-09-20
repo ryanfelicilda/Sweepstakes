@@ -15,6 +15,11 @@ namespace Sweepstakes
         {
             nameOfSweepstake = name;
         }
+
+        public Sweepstakes()
+        {
+        }
+
         public void RegisterContestant(Contestant contestant)
         {
             registrationNumber = contestants.Count() + 1;
